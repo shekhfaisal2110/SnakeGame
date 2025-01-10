@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo/logoIcon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="board"></div>
+    
+    <div class="score-container">
+        <div class="score-item">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div class="score-item">
+            <p>Highest Score: <span id="highestScore">0</span></p>
+        </div>
+    </div>
+
+    <div id="nameInputContainer" style="display: none;">
+        <label for="username">Enter your name: </label>
+        <input type="text" id="username" />
+        <button onclick="saveUserName()">Save</button>
+    </div>    
+
+    <div class="keys">
+        <div class="up keys" data-key="ArrowUp">
+            <i class="fa-solid fa-arrow-up fa-3x" style="color: white;"></i>
+        </div>
+        <div class="down keys" data-key="ArrowDown">
+            <i class="fa-solid fa-arrow-down fa-3x" style="color: white;"></i>
+        </div>
+        <div class="left keys" data-key="ArrowLeft">
+            <i class="fa-solid fa-arrow-left fa-3x" style="color: white;"></i>
+        </div>
+        <div class="right keys" data-key="ArrowRight">
+            <i class="fa-solid fa-arrow-right fa-3x" style="color: white;"></i>
+        </div>
+    </div>
+
+    <div class="btn">
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
